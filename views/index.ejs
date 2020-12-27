@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <%- include('layout/head.ejs') %>
+    </head>
+    <body>
+        <div class="container custom-container">
+            <form action="/search" method="GET" class="form">
+                <div class="mb-3 wrapper">
+                    <label for="searchTxt" class="custom-form-label"
+                        >장소 또는 음식</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="searchTxt"
+                        name="searchTxt"
+                        placeholder="사당 또는 돈가스"
+                    />
+                    <button class="btn btn-primary" type="submit">
+                        Submit form
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

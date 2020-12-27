@@ -1,0 +1,16 @@
+<ul>
+    <% for(let i=0; i<data.length; i++){ %>
+        <li>
+            <div class="card" style="width: 18rem;">
+                <img src="<%=data[i].imgUrl%>" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><%=data[i].title%></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text"><%=data[i].cate%></p>
+                  <p class="card-text"><%=data[i].point%></p>
+                  <a href="<%=data[i].url%>" class="btn btn-primary">자세히 보기</a>
+                </div>
+              </div>                    
+        </li>
+    <% } %>
+</ul>
