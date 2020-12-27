@@ -29,10 +29,6 @@
     text-align: center;
 }
 
-.foodItem {
-    width: 100px;
-}
-
 h1 {
     margin-bottom: 32px;
 }
@@ -76,6 +72,21 @@ p.bold {
 .search {
     max-width: 670px;
 }
+@media screen and (max-width: 1200px) {
+    .foodItem {
+        width: 8%;
+    }
+    .custom-container {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+    .btn-group {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .card-item {
         width: 43%;
@@ -94,9 +105,11 @@ p.bold {
     .btn-group {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
     .foodItem {
+        width: 50%;
         margin: 0;
     }
 }
