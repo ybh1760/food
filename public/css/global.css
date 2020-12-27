@@ -3,6 +3,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .form {
@@ -14,5 +29,74 @@
     text-align: center;
 }
 
-.wrapper {
+.foodItem {
+    width: 100px;
+}
+
+h1 {
+    margin-bottom: 32px;
+}
+
+h3 {
+    margin-bottom: 24px;
+}
+
+.btn {
+    margin-top: 12px;
+}
+
+p.text {
+    width: fit-content;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+p.bold {
+    font-weight: bold;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+
+.card-item {
+    width: 23%;
+    margin: 12px;
+}
+
+.keyword {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 24px;
+}
+.search {
+    max-width: 670px;
+}
+@media screen and (max-width: 1024px) {
+    .card-item {
+        width: 43%;
+    }
+    .custom-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-item {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .foodItem {
+        margin: 0;
+    }
 }

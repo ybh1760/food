@@ -1,9 +1,10 @@
 <html>
     <head>
         <%- include('layout/head.ejs') %>
+        <script src="/js/search.js"></script>
     </head>
     <body>
-        <h1><%=keyword%></h1>
+        <h1 class="keyword"><%=keyword%>맛집 리스트</h1>
         <%- include('list/search.ejs') %>
     </body>
 </html>

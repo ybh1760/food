@@ -9,7 +9,5 @@ export const search = async (searchTxt) => {
 
     const total = manRestData.concat(dinResData)
 
-    // console.log(reData)
-
     return total
 }

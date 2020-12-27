@@ -4,20 +4,27 @@
     </head>
     <body>
         <div class="container custom-container">
+            <h1 style="font-weight: bold">맛집 검색하기</h1>
+            <%- include('list/food.ejs')%>
+
             <form action="/search" method="GET" class="form">
                 <div class="mb-3 wrapper">
                     <label for="searchTxt" class="custom-form-label"
-                        >장소 또는 음식</label
+                        ><h3>지역또는 메뉴로 검색하기</h3></label
                     >
                     <input
                         type="text"
-                        class="form-control"
+                        class="form-control search"
                         id="searchTxt"
                         name="searchTxt"
-                        placeholder="사당 또는 돈가스"
+                        placeholder="지역이나 메뉴를 입력해주세요. (ex.사당,돈가스)"
+                        required
                     />
-                    <button class="btn btn-primary" type="submit">
-                        Submit form
+                    <button
+                        class="btn btn-outline-primary btn-sm"
+                        type="submit"
+                    >
+                        찾아보기
                     </button>
                 </div>
             </form>
